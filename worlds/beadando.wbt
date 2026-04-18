@@ -1,0 +1,815 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/traffic/protos/DirectionPanel.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.28635758834519615 0.4846628589482172 -0.8264993918650297 1.2412612426022547
+  position -1.3473413496652658 3.245238856058515 3.0340845803434333
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+  floorTileSize 0.2 0.2
+}
+Solid {
+  translation -0.763332 -0.856607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.49 0.01 0.1
+      }
+    }
+  ]
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.103332 -0.706607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.49 0.01 0.1
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.596668 -0.556607 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.61 0.01 0.1
+      }
+    }
+  ]
+  name "solid(13)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.736668 -0.426607 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.6 0.01 0.1
+      }
+    }
+  ]
+  name "solid(15)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.896668 0.403393 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.84 0.01 0.1
+      }
+    }
+  ]
+  name "solid(30)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.786668 0.393393 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.6 0.01 0.1
+      }
+    }
+  ]
+  name "solid(31)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.066668 -0.856607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.5 0.01 0.1
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.263332 -0.546607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.5 0.01 0.1
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.813332 0.653393 0.05
+  rotation -2.3464099999870814e-06 -2.3464099999870814e-06 0.9999999999944944 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.5 0.01 0.1
+      }
+    }
+  ]
+  name "solid(26)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.06 0.512 0.05
+  rotation 2.346409999987081e-06 2.346409999987081e-06 -0.9999999999944942 1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.38 0.01 0.1
+      }
+    }
+  ]
+  name "solid(29)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.344918 -0.850917 0.05
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.853332 -0.706607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.253332 0.173393 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(24)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.146668 0.173393 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(33)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.746668 -0.016607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(36)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.196668 0.543393 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(34)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.086668 0.323393 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(32)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.918 0.003393 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.17 0.01 0.1
+      }
+    }
+  ]
+  name "solid(19)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.146668 -0.556607 0.05
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.306668 -0.406607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.32 0.01 0.1
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.746668 -0.856607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(14)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.466668 -0.556607 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(12)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.713332 0.0333894 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.32 0.01 0.1
+      }
+    }
+  ]
+  name "solid(18)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.503332 0.133389 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.32 0.01 0.1
+      }
+    }
+  ]
+  name "solid(22)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.296668 0.023389 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.1 0.01 0.1
+      }
+    }
+  ]
+  name "solid(38)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.296668 0.123389 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.1 0.01 0.1
+      }
+    }
+  ]
+  name "solid(39)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.213332 0.023389 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(23)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.203332 0.453389 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.32 0.01 0.1
+      }
+    }
+  ]
+  name "solid(25)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.346668 0.553389 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(35)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.833332 0.0333894 0.05
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.32 0.01 0.1
+      }
+    }
+  ]
+  name "solid(20)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.866668 -0.726607 0.05
+  rotation 0 0 -1 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.27 0.01 0.1
+      }
+    }
+  ]
+  name "solid(16)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.276668 -0.556607 0.05
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.3 0.01 0.1
+      }
+    }
+  ]
+  name "solid(10)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.203332 -0.246607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 1.6 0.01 0.1
+      }
+    }
+  ]
+  name "solid(11)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.086668 -0.126607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 1.6 0.01 0.1
+      }
+    }
+  ]
+  name "solid(17)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.013332 0.703393 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 1.6 0.01 0.1
+      }
+    }
+  ]
+  name "solid(27)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.096668 0.823393 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 1.6 0.01 0.1
+      }
+    }
+  ]
+  name "solid(28)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.513332 -0.606607 0.05
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.5 0.01 0.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.503332 -0.356607 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.8 0.01 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation 0.296668 0.073393 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.8 0.01 0.1
+      }
+    }
+  ]
+  name "solid(37)"
+  boundingObject USE Box_Def
+}
+Solid {
+  translation -0.603332 0.293393 0.05
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF Box_Def Box {
+        size 0.8 0.01 0.1
+      }
+    }
+  ]
+  name "solid(21)"
+  boundingObject USE Box_Def
+}
+E-puck {
+  translation -0.849411 -0.941595 -1.77636e-15
+}
+DirectionPanel {
+  translation -0.350435 -0.964065 0.0399988
+  rotation 1.32679e-06 1 4.79489e-09 -3.1415853071795863
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.450435 -0.554065 0.0399998
+  rotation -0.7071077811831521 -0.7071057811837711 2.593959197290724e-06 3.14159
+  name "direction panel(1)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.139565 -0.654065 0.0399939
+  rotation 1.40702e-06 1 -8.9602e-07 -3.1415853071795863
+  name "direction panel(2)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.049565 -0.254065 0.0399948
+  rotation -0.7071077811818403 -0.7071057811824593 3.2309290001723123e-06 3.14159
+  name "direction panel(3)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.049565 -0.254065 0.0399948
+  rotation -0.7071077811818403 -0.7071057811824593 3.2309290001723123e-06 3.14159
+  name "direction panel(4)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.589565 -0.314065 0.03999
+  rotation -0.9999999999938103 1.4118199999912613e-06 3.222799999980052e-06 -3.1415853071795863
+  name "direction panel(5)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.519565 -0.99406 0.0399975
+  rotation -0.7071077811771244 -0.7071057811777434 4.876208490999544e-06 3.14159
+  name "direction panel(6)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.99956 -0.95406 0.0399923
+  rotation 1.4070199999941758e-06 0.9999999999958606 -2.509809999989611e-06 -3.1415853071795863
+  name "direction panel(7)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.96956 -0.73406 0.0399913
+  rotation -0.7071057811859106 0.7071077811852917 8.226447454323446e-07 -3.1415853071795863
+  name "direction panel(8)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.68956 -0.13406 0.0399886
+  rotation -0.7071057811859106 0.7071077811852917 8.226447454323446e-07 -3.1415853071795863
+  name "direction panel(9)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.79044 0.28594 0.0399982
+  rotation 5.19947999992617e-06 -1.1681899999834124e-06 0.9999999999858005 -1.5707953071795862
+  name "direction panel(11)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.51044 0.25594 0.0399954
+  rotation 3.183829999977396e-06 2.01563999998569e-06 0.9999999999929003 3.14159
+  name "direction panel(12)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.63044 -0.12406 0.0399966
+  rotation 5.19945999992617e-06 -1.1681899999834124e-06 0.9999999999858005 -1.5707953071795862
+  name "direction panel(13)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.51044 0.25594 0.0399954
+  rotation 3.183829999977396e-06 2.01563999998569e-06 0.9999999999929003 3.14159
+  name "direction panel(14)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.22044 -0.09406 0.0399925
+  rotation 1.32678999999615e-06 0.9999999999970981 -2.0108499999941648e-06 -3.1415853071795863
+  name "direction panel(15)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.28044 0.16594 0.0399916
+  rotation -0.7071057811860672 0.7071077811854483 -4.836998503190479e-07 -3.1415853071795863
+  name "direction panel(16)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.50044 0.06594 0.0399926
+  rotation -1.411819999992494e-06 -0.9999999999946834 2.9393799999843723e-06 3.14159
+  name "direction panel(17)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.47044 0.28594 0.039991
+  rotation -0.7071077811823137 -0.7071057811829327 3.01663906648746e-06 3.14159
+  name "direction panel(18)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.77956 0.26594 0.039979
+  rotation -0.999999999994287 1.4118199999919344e-06 3.071269999982454e-06 -3.1415853071795863
+  name "direction panel(19)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.71956 -0.0140598 0.0399822
+  rotation 1.8715799999542154e-06 6.739679999835127e-06 0.9999999999755369 1.57079
+  name "direction panel(20)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.29956 0.0459438 0.0399864
+  rotation 4.305619999947336e-06 2.4340399999702286e-06 0.9999999999877687 3.14159
+  name "direction panel(21)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.33956 -0.124056 0.039986
+  rotation 6.739649999835128e-06 -1.8715799999542158e-06 0.9999999999755371 -1.5707953071795862
+  name "direction panel(22)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation 0.99956 -0.054056 0.0399794
+  rotation 4.305609999947336e-06 2.4340299999702284e-06 0.9999999999877687 3.14159
+  name "direction panel(23)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
+DirectionPanel {
+  translation -0.83 -0.21 -0.00499945
+  rotation 3.427469999979243e-06 0.999999999993944 -6.038299999963432e-07 -1.5707853071795865
+  name "direction panel(10)"
+  width 0.05
+  height 0.015
+  thickness 0.01
+}
