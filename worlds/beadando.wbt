@@ -4,31 +4,48 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/traffic/protos/DirectionPanel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.28635758834519615 0.4846628589482172 -0.8264993918650297 1.2412612426022547
-  position -1.3473413496652658 3.245238856058515 3.0340845803434333
+  orientation 0.31358131193048266 -0.930484531237933 -0.189381355827023 4.853614509090355
+  position -1.0669749365455083 -0.6976754693483966 2.9033618158083976
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
+  castShadows FALSE
 }
 RectangleArena {
   floorSize 2 2
   floorTileSize 0.2 0.2
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallHeight 0.3
+  wallAppearance PBRAppearance {
+    baseColor 0.357 0.357 0.357
+    roughness 1
+    metalness 0
+  }
+}
+DirectionalLight {
+  ambientIntensity 1
+  direction 0 -1 0
 }
 Solid {
   translation -0.763332 -0.856607 0.05
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
+      appearance DEF AppearanceDEF PBRAppearance {
+        baseColor 0.356863 0.356863 0.356863
+        roughness 1
+        metalness 0
       }
       geometry DEF Box_Def Box {
-        size 0.49 0.01 0.1
+        size 0.49 0.01 0.3
       }
     }
   ]
@@ -39,173 +56,183 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
-        size 0.49 0.01 0.1
+      appearance USE AppearanceDEF
+      geometry Box {
+        size 0.49 0.01 0.3
       }
     }
   ]
   name "solid(5)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.49 0.01 0.1
+  }
 }
 Solid {
   translation 0.596668 -0.556607 0.05
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
+      appearance USE AppearanceDEF
+      geometry Box {
         size 0.61 0.01 0.1
       }
     }
   ]
   name "solid(13)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.61 0.01 0.1
+  }
 }
 Solid {
   translation 0.736668 -0.426607 0.05
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
-        size 0.6 0.01 0.1
+      appearance USE AppearanceDEF
+      geometry Box {
+        size 0.605 0.01 0.1
       }
     }
   ]
   name "solid(15)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.605 0.01 0.1
+  }
 }
 Solid {
   translation 0.896668 0.403393 0.05
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
+      appearance USE AppearanceDEF
+      geometry Box {
         size 0.84 0.01 0.1
       }
     }
   ]
   name "solid(30)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.84 0.01 0.1
+  }
 }
 Solid {
   translation 0.786668 0.393393 0.05
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
-        size 0.6 0.01 0.1
+      appearance USE AppearanceDEF
+      geometry Box {
+        size 0.63 0.01 0.1
       }
     }
   ]
   name "solid(31)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.63 0.01 0.1
+  }
 }
 Solid {
   translation 0.066668 -0.856607 0.05
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
-        size 0.5 0.01 0.1
+      appearance USE AppearanceDEF
+      geometry Box {
+        size 0.7 0.01 0.1
       }
     }
   ]
   name "solid(6)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.7 0.01 0.1
+  }
 }
 Solid {
   translation -0.263332 -0.546607 0.05
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
-        size 0.5 0.01 0.1
+      appearance USE AppearanceDEF
+      geometry Box {
+        size 0.5 0.01 0.3
       }
     }
   ]
   name "solid(7)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.5 0.01 0.3
+  }
 }
 Solid {
   translation -0.813332 0.653393 0.05
   rotation -2.3464099999870814e-06 -2.3464099999870814e-06 0.9999999999944944 -1.5707953071795862
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
-        size 0.5 0.01 0.1
+      appearance USE AppearanceDEF
+      geometry Box {
+        size 0.4 0.01 0.1
       }
     }
   ]
   name "solid(26)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.4 0.01 0.1
+  }
 }
 Solid {
   translation -0.06 0.512 0.05
   rotation 2.346409999987081e-06 2.346409999987081e-06 -0.9999999999944942 1.5707953071795862
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
+      appearance USE AppearanceDEF
+      geometry Box {
         size 0.38 0.01 0.1
       }
     }
   ]
   name "solid(29)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.38 0.01 0.1
+  }
 }
 Solid {
   translation -0.344918 -0.850917 0.05
   rotation 0 0 1 -1.5707953071795862
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
-        size 0.3 0.01 0.1
+      appearance USE AppearanceDEF
+      geometry Box {
+        size 0.3 0.01 0.3
       }
     }
   ]
   name "solid(1)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.3 0.01 0.1
+  }
 }
 Solid {
   translation -0.853332 -0.706607 0.05
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
-      geometry DEF Box_Def Box {
+      appearance USE AppearanceDEF
+      geometry Box {
         size 0.3 0.01 0.1
       }
     }
   ]
   name "solid(2)"
-  boundingObject USE Box_Def
+  boundingObject Box {
+    size 0.3 0.01 0.1
+  }
 }
 Solid {
   translation -0.253332 0.173393 0.05
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -219,8 +246,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -234,8 +260,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -249,8 +274,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -264,8 +288,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -279,8 +302,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.17 0.01 0.1
       }
@@ -294,10 +316,9 @@ Solid {
   rotation 0 0 1 -1.5707953071795862
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 0.3 0.01 0.1
+        size 0.3 0.01 0.3
       }
     }
   ]
@@ -309,8 +330,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.32 0.01 0.1
       }
@@ -324,8 +344,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -339,8 +358,7 @@ Solid {
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -354,8 +372,7 @@ Solid {
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.32 0.01 0.1
       }
@@ -369,8 +386,7 @@ Solid {
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.32 0.01 0.1
       }
@@ -384,8 +400,7 @@ Solid {
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.1 0.01 0.1
       }
@@ -399,8 +414,7 @@ Solid {
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.1 0.01 0.1
       }
@@ -414,8 +428,7 @@ Solid {
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -429,8 +442,7 @@ Solid {
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.32 0.01 0.1
       }
@@ -444,8 +456,7 @@ Solid {
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -459,8 +470,7 @@ Solid {
   rotation 0 0 1 1.5708
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.32 0.01 0.1
       }
@@ -474,8 +484,7 @@ Solid {
   rotation 0 0 -1 -5.307179586466759e-06
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.27 0.01 0.1
       }
@@ -489,8 +498,7 @@ Solid {
   rotation 0 0 1 -1.5707953071795862
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.3 0.01 0.1
       }
@@ -504,8 +512,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 1.6 0.01 0.1
       }
@@ -519,8 +526,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 1.6 0.01 0.1
       }
@@ -534,8 +540,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 1.6 0.01 0.1
       }
@@ -549,8 +554,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 1.6 0.01 0.1
       }
@@ -564,10 +568,9 @@ Solid {
   rotation 0 0 1 -1.5707953071795862
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 0.5 0.01 0.1
+        size 0.5 0.01 0.3
       }
     }
   ]
@@ -579,8 +582,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.8 0.01 0.1
       }
@@ -594,8 +596,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.8 0.01 0.1
       }
@@ -609,8 +610,7 @@ Solid {
   rotation 0 1 0 0
   children [
     Shape {
-      appearance PBRAppearance {
-      }
+      appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
         size 0.8 0.01 0.1
       }
@@ -620,196 +620,606 @@ Solid {
   boundingObject USE Box_Def
 }
 E-puck {
-  translation -0.849411 -0.941595 -1.77636e-15
+  translation -0.853598 -0.940755 -5.46134e-05
+  controller "camera_processor"
+  camera_width 500
+  camera_height 500
 }
-DirectionPanel {
-  translation -0.350435 -0.964065 0.0399988
-  rotation 1.32679e-06 1 4.79489e-09 -3.1415853071795863
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.353679 -0.929042 0.0399997
+  rotation 2.3464099999870814e-06 0.9999999999944944 2.3464099999870814e-06 1.5708
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(40)"
 }
-DirectionPanel {
-  translation -0.450435 -0.554065 0.0399998
-  rotation -0.7071077811831521 -0.7071057811837711 2.593959197290724e-06 3.14159
-  name "direction panel(1)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.423679 -0.549042 0.0400004
+  rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(49)"
 }
-DirectionPanel {
-  translation 0.139565 -0.654065 0.0399939
-  rotation 1.40702e-06 1 -8.9602e-07 -3.1415853071795863
-  name "direction panel(2)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.763679 0.290958 0.0400089
+  rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(55)"
 }
-DirectionPanel {
-  translation 0.049565 -0.254065 0.0399948
-  rotation -0.7071077811818403 -0.7071057811824593 3.2309290001723123e-06 3.14159
-  name "direction panel(3)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.503679 0.230958 0.0400083
+  rotation 0.7071057811849545 1.8388094309774008e-06 -0.7071077811843355 -3.1415853071795863
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(57)"
 }
-DirectionPanel {
-  translation 0.049565 -0.254065 0.0399948
-  rotation -0.7071077811818403 -0.7071057811824593 3.2309290001723123e-06 3.14159
-  name "direction panel(4)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.784321 0.240958 0.0400084
+  rotation 0.7071057811849545 1.8388094309774008e-06 -0.7071077811843355 -3.1415853071795863
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(60)"
 }
-DirectionPanel {
-  translation 0.589565 -0.314065 0.03999
-  rotation -0.9999999999938103 1.4118199999912613e-06 3.222799999980052e-06 -3.1415853071795863
-  name "direction panel(5)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.99932 -0.079042 0.0400052
+  rotation 0.7071057811849545 1.8388094309774008e-06 -0.7071077811843355 -3.1415853071795863
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(62)"
 }
-DirectionPanel {
-  translation 0.519565 -0.99406 0.0399975
-  rotation -0.7071077811771244 -0.7071057811777434 4.876208490999544e-06 3.14159
-  name "direction panel(6)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.734321 -0.015042 0.0400058
+  rotation -0.5773472691830309 0.5773502691844296 0.5773532691858283 2.09439
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(61)"
 }
-DirectionPanel {
-  translation 0.99956 -0.95406 0.0399923
-  rotation 1.4070199999941758e-06 0.9999999999958606 -2.509809999989611e-06 -3.1415853071795863
-  name "direction panel(7)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.443679 0.290958 0.0400089
+  rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(56)"
 }
-DirectionPanel {
-  translation 0.96956 -0.73406 0.0399913
-  rotation -0.7071057811859106 0.7071077811852917 8.226447454323446e-07 -3.1415853071795863
-  name "direction panel(8)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.498679 0.090958 0.0400069
+  rotation -2.531759999983294e-06 -0.9999999999934015 -2.605269999982809e-06 -1.5707953071795862
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(59)"
 }
-DirectionPanel {
-  translation 0.68956 -0.13406 0.0399886
-  rotation -0.7071057811859106 0.7071077811852917 8.226447454323446e-07 -3.1415853071795863
-  name "direction panel(9)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.076321 -0.249042 0.0400034
+  rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(50)"
 }
-DirectionPanel {
-  translation -0.79044 0.28594 0.0399982
-  rotation 5.19947999992617e-06 -1.1681899999834124e-06 0.9999999999858005 -1.5707953071795862
-  name "direction panel(11)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.833679 -0.179022 -0.004
+  rotation -0.9802411840503911 0.1973080370466187 -0.014027102633733175 -5.307179586466759e-06
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(54)"
 }
-DirectionPanel {
-  translation -0.51044 0.25594 0.0399954
-  rotation 3.183829999977396e-06 2.01563999998569e-06 0.9999999999929003 3.14159
-  name "direction panel(12)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.59321 -0.339042 0.0400025
+  rotation 0.7071057811849545 1.8388094309774008e-06 -0.7071077811843355 -3.1415853071795863
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(51)"
 }
-DirectionPanel {
-  translation -0.63044 -0.12406 0.0399966
-  rotation 5.19945999992617e-06 -1.1681899999834124e-06 0.9999999999858005 -1.5707953071795862
-  name "direction panel(13)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.598 -0.789042 0.039998
+  rotation 5.189889999912492e-06 0.9999999999831388 2.6052599999560725e-06 1.5708
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0 0.333333 0.498039
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(53)"
 }
-DirectionPanel {
-  translation -0.51044 0.25594 0.0399954
-  rotation 3.183829999977396e-06 2.01563999998569e-06 0.9999999999929003 3.14159
-  name "direction panel(14)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.136321 -0.629042 0.0399997
+  rotation 2.3464099999870814e-06 0.9999999999944944 2.3464099999870814e-06 1.5708
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(41)"
 }
-DirectionPanel {
-  translation -0.22044 -0.09406 0.0399925
-  rotation 1.32678999999615e-06 0.9999999999970981 -2.0108499999941648e-06 -3.1415853071795863
-  name "direction panel(15)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.223679 -0.069042 0.0400001
+  rotation 2.3464099999870814e-06 0.9999999999944944 2.3464099999870814e-06 1.5708
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(45)"
 }
-DirectionPanel {
-  translation -0.28044 0.16594 0.0399916
-  rotation -0.7071057811860672 0.7071077811854483 -4.836998503190479e-07 -3.1415853071795863
-  name "direction panel(16)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.603679 -0.119042 0.0399996
+  rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(58)"
 }
-DirectionPanel {
-  translation -0.50044 0.06594 0.0399926
-  rotation -1.411819999992494e-06 -0.9999999999946834 2.9393799999843723e-06 3.14159
-  name "direction panel(17)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation -0.303679 0.164958 0.0400001
+  rotation 0.5773479358528951 -0.5773499358526729 -0.5773529358523396 -2.094395307179586
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(46)"
 }
-DirectionPanel {
-  translation -0.47044 0.28594 0.039991
-  rotation -0.7071077811823137 -0.7071057811829327 3.01663906648746e-06 3.14159
-  name "direction panel(18)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.546321 -0.999042 0.0399991
+  rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(42)"
 }
-DirectionPanel {
-  translation 0.77956 0.26594 0.039979
-  rotation -0.999999999994287 1.4118199999919344e-06 3.071269999982454e-06 -3.1415853071795863
-  name "direction panel(19)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.366321 -0.119042 0.040007
+  rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(47)"
 }
-DirectionPanel {
-  translation 0.71956 -0.0140598 0.0399822
-  rotation 1.8715799999542154e-06 6.739679999835127e-06 0.9999999999755369 1.57079
-  name "direction panel(20)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.306321 0.020958 0.0400084
+  rotation 0.7071057811849545 1.8388094309774008e-06 -0.7071077811843355 -3.1415853071795863
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(48)"
 }
-DirectionPanel {
-  translation 0.29956 0.0459438 0.0399864
-  rotation 4.305619999947336e-06 2.4340399999702286e-06 0.9999999999877687 3.14159
-  name "direction panel(21)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.996321 -0.929042 0.0399998
+  rotation -2.531759999983294e-06 -0.9999999999934015 -2.605269999982809e-06 -1.5707953071795862
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(43)"
 }
-DirectionPanel {
-  translation 0.33956 -0.124056 0.039986
-  rotation 6.739649999835128e-06 -1.8715799999542158e-06 0.9999999999755371 -1.5707953071795862
-  name "direction panel(22)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.936321 -0.733042 0.040001
+  rotation 0.5773499358549823 -0.5773489358550934 -0.5773519358547601 -2.094395307179586
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(52)"
 }
-DirectionPanel {
-  translation 0.99956 -0.054056 0.0399794
-  rotation 4.305609999947336e-06 2.4340299999702284e-06 0.9999999999877687 3.14159
-  name "direction panel(23)"
-  width 0.05
-  height 0.015
-  thickness 0.01
-}
-DirectionPanel {
-  translation -0.83 -0.21 -0.00499945
-  rotation 3.427469999979243e-06 0.999999999993944 -6.038299999963432e-07 -1.5707853071795865
-  name "direction panel(10)"
-  width 0.05
-  height 0.015
-  thickness 0.01
+Solid {
+  translation 0.656321 -0.134042 0.0400034
+  rotation 0.5773499358549823 -0.5773489358550934 -0.5773519358547601 -2.094395307179586
+  children [
+    Transform {
+      scale 0.01 0.01 0.005
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 1
+              diffuseColor 0.333333 0 0
+              shininess 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../Customizable Curvy Arrow - 869074/files/curvy_arrow-sets[[1_5_35[0_10_75[0.5_10_0[-3_10_60h1.stl"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(44)"
 }
