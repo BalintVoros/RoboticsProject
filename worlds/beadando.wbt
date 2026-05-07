@@ -9,8 +9,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.6755667132639303 0.07787983025145288 -0.7331741593712748 3.208214591528603
-  position 0.34035754612398106 -0.8384071636636017 4.920633589607834
+  orientation -0.180792122602735 -0.7867490201009467 0.5902035138619539 5.000541352577736
+  position -1.919169066420239 0.648190239669054 3.1671679248144797
 }
 TexturedBackground {
 }
@@ -23,7 +23,7 @@ RectangleArena {
   floorAppearance Parquetry {
     type "light strip"
   }
-  wallHeight 0.4
+  wallHeight 0.6
   wallAppearance PBRAppearance {
     baseColor 0.357 0.357 0.357
     roughness 1
@@ -228,7 +228,7 @@ Solid {
   }
 }
 Solid {
-  translation -0.253332 0.173393 0.05
+  translation -0.233332 0.143393 0.05
   rotation 0 1 0 0
   children [
     Shape {
@@ -340,13 +340,13 @@ Solid {
   boundingObject USE Box_Def
 }
 Solid {
-  translation 0.746668 -0.856607 0.05
+  translation 0.696668 -0.856607 0.05
   rotation 0 1 0 0
   children [
     Shape {
       appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 0.3 0.01 0.4
+        size 0.2 0.01 0.4
       }
     }
   ]
@@ -368,13 +368,13 @@ Solid {
   boundingObject USE Box_Def
 }
 Solid {
-  translation -0.713332 0.0333894 0.05
+  translation -0.673332 0.0133894 0.05
   rotation 0 0 1 1.5708
   children [
     Shape {
       appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 0.32 0.01 0.4
+        size 0.28 0.01 0.4
       }
     }
   ]
@@ -382,13 +382,13 @@ Solid {
   boundingObject USE Box_Def
 }
 Solid {
-  translation -0.503332 0.133389 0.05
+  translation -0.503332 0.153389 0.05
   rotation 0 0 1 1.5708
   children [
     Shape {
       appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 0.32 0.01 0.4
+        size 0.28 0.01 0.4
       }
     }
   ]
@@ -424,13 +424,13 @@ Solid {
   boundingObject USE Box_Def
 }
 Solid {
-  translation -0.213332 0.023389 0.05
+  translation -0.213332 0.003389 0.05
   rotation 0 0 1 1.5708
   children [
     Shape {
       appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 0.3 0.01 0.4
+        size 0.27 0.01 0.4
       }
     }
   ]
@@ -466,13 +466,13 @@ Solid {
   boundingObject USE Box_Def
 }
 Solid {
-  translation -0.833332 0.0333894 0.05
+  translation -0.833332 0.0233894 0.05
   rotation 0 0 1 1.5708
   children [
     Shape {
       appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 0.32 0.01 0.4
+        size 0.54 0.01 0.8
       }
     }
   ]
@@ -508,13 +508,13 @@ Solid {
   boundingObject USE Box_Def
 }
 Solid {
-  translation -0.203332 -0.246607 0.05
+  translation -0.253332 -0.246607 0.05
   rotation 0 1 0 0
   children [
     Shape {
       appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 1.6 0.01 0.4
+        size 1.7 0.01 0.7
       }
     }
   ]
@@ -522,13 +522,13 @@ Solid {
   boundingObject USE Box_Def
 }
 Solid {
-  translation 0.086668 -0.126607 0.05
+  translation 0.066668 -0.126607 0.05
   rotation 0 1 0 0
   children [
     Shape {
       appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 1.6 0.01 0.4
+        size 1.5 0.01 0.4
       }
     }
   ]
@@ -592,13 +592,13 @@ Solid {
   boundingObject USE Box_Def
 }
 Solid {
-  translation 0.296668 0.073393 0.05
+  translation 0.296668 0.103393 0.05
   rotation 0 1 0 0
   children [
     Shape {
       appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 0.8 0.01 0.4
+        size 0.6 0.01 0.4
       }
     }
   ]
@@ -612,7 +612,7 @@ Solid {
     Shape {
       appearance USE AppearanceDEF
       geometry DEF Box_Def Box {
-        size 0.8 0.01 0.4
+        size 0.8 0.01 0.8
       }
     }
   ]
@@ -886,7 +886,7 @@ Solid {
   name "solid(50)"
 }
 Solid {
-  translation -0.823679 -0.0490233 0.126001
+  translation -0.823679 -0.159023 0.046001
   rotation 2.5639399999826485e-06 0.9999999999932325 2.638379999982145e-06 1.5708
   children [
     Transform {
@@ -1042,7 +1042,7 @@ Solid {
   name "solid(58)"
 }
 Solid {
-  translation -0.303679 0.164958 0.0400001
+  translation -0.303679 0.134958 0.0400001
   rotation 0.5773479358528951 -0.5773499358526729 -0.5773529358523396 -2.094395307179586
   children [
     Transform {
@@ -1222,4 +1222,84 @@ Solid {
     }
   ]
   name "solid(44)"
+}
+Solid {
+  translation 0.89 -0.57 -2.34641e-07
+  rotation 2.346409999974163e-06 2.346409999974163e-06 0.9999999999944944 1.5708
+  children [
+    DEF FLAG_SHAPE Group {
+      children [
+        Pose {
+          translation 0 0 0.015
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.75 0.75 0.75
+                roughness 0.3
+              }
+              geometry Cylinder {
+                height 0.03
+                radius 0.1
+                subdivision 20
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.27
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.75 0.75 0.75
+                roughness 0.3
+              }
+              geometry Cylinder {
+                height 0.5
+                radius 0.01
+                subdivision 8
+              }
+            }
+          ]
+        }
+      ]
+    }
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/samples/contests/tower_of_hanoi/protos/textures/flag_start.png"
+          ]
+        }
+        roughness 0.7
+        metalness 0
+      }
+      geometry IndexedFaceSet {
+        coord Coordinate {
+          point [
+            0 0 0.5
+            0 0.3 0.4
+            0 0 0.3
+          ]
+        }
+        texCoord TextureCoordinate {
+          point [
+            0 1
+            1 0.5
+            0 0
+          ]
+        }
+        coordIndex [
+          0, 1, 2, -1, 0, 2, 1, -1
+        ]
+        texCoordIndex [
+          0, 1, 2, -1, 0, 2, 1, -1
+        ]
+      }
+      isPickable FALSE
+    }
+  ]
+  name "youBot flag"
+  model "youBot flag"
+  boundingObject USE FLAG_SHAPE
+  locked TRUE
 }
